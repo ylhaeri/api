@@ -13,11 +13,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <scm>
-        <developerConnection>scm:git:git@github.com:myhorin/api.git</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
-
     <modules>
         <module>api-java-time</module>
         <module>api-core</module>
@@ -36,8 +31,9 @@
             </plugin>
 
             <plugin>
-                <artifactId>maven-release-plugin</artifactId>
-                <version>2.5.2</version>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.2</version>
             </plugin>
         </plugins>
     </build>
